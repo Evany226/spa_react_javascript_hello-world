@@ -6,6 +6,7 @@ import { NotFoundPage } from "./pages/not-found-page";
 import { ProfilePage } from "./pages/profile-page";
 import { ProtectedPage } from "./pages/protected-page";
 import { PublicPage } from "./pages/public-page";
+import { CallbackPage } from "./pages/callback-page";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <Route path="/public" element={<PublicPage />} />
       <Route path="/protected" element={<ProtectedPage />} />
       <Route path="/admin" element={<AdminPage />} />
+      <Route path="/callback" element={<CallbackPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
